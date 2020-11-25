@@ -23,15 +23,17 @@ blockquote {
 }
 pre {
     border: 1px solid #eee;
-    padding: 1em;
+    padding: 1em .5em;
     font-family: var(--font-code);
     font-weight: 300;
     font-size: 0.9em;
-    line-height: 1.6em;
+    line-height: 1.4em;
+    overflow-x: scroll;
 }
 code {
     font-family: 'Courier New', Courier, monospace;
     padding: 0 .5em;
+    word-break: break-all;
 }
 p {
     line-height: 1.75em;
