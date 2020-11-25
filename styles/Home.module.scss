@@ -13,9 +13,10 @@
      .nav {
          ul {
              display: flex;
-             gap: 1em;
+             padding-left: 0;
              li {
                  list-style: none;
+                 margin-right: 1em;
                  a {
                      color: black;
                  }
@@ -32,6 +33,11 @@
     }
     iframe {
         width: 100%;
+    }
+    a[href^="http"] {
+        font-family: var(--font-code);
+        font-size: 0.8em;
+        font-weight: 300;
     }
 }
 .archive {

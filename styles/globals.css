@@ -1,11 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Noto+Serif+JP:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Lato:wght@300;700&family=Noto+Sans+JP:wght@300;700&family=Noto+Serif+JP:wght@200;400;700&display=swap');
 :root {
     --font-general: Girassol, "Noto Serif JP", serif;
+    --font-body: "Lato", "Noto Sans JP", serif;
+    --font-code: "Lato", sans-serif;
 }
 body,
 figure,
 blockquote {
     margin: 0;
+    font-family: var(--font-body);
+    font-weight: 300;
+}
+blockquote {
+    border-left: 1px solid #ddd;
+    padding: .3em 0 .3em .8em;
+}
+pre {
+    border: 1px solid #eee;
+    padding: 1em;
+    font-family: var(--font-code);
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 .5em;
+}
+p {
+    line-height: 1.75em;
 }
 img {
     max-width: 100%;
