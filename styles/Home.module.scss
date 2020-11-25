@@ -43,7 +43,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        filter: blur(.2em);
+        animation: focus 3s ease-in 1s;
     }
     &:after {
         background: linear-gradient(7deg, #fff 25%, rgba(255, 255, 255, 0) 90%);
@@ -91,5 +91,13 @@
                 font-weight: 300;
             }
         }
+    }
+}
+@keyframes focus {
+    from {
+        filter: blur(0.2em);
+    }
+    to {
+        filter: blur(0.01em);
     }
 }
