@@ -7,6 +7,7 @@ export default function Header() {
     <>
       <Head>
         <title>GutenbergFreaks</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <header className={styles.header}>
         <h1>GutenbergFreaks</h1>
@@ -16,7 +17,7 @@ export default function Header() {
               <a>HOME</a>
             </Link></li>
             <li><Link href={`/posts`}>
-              <a>Blog</a>
+              <a>BLOG</a>
             </Link></li>
           </ul>
         </nav>

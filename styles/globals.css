@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Noto+Serif+JP:wght@200;400;700&display=swap');
+:root {
+    --font-general: Girassol, "Noto Serif JP", serif;
+}
+body,
+figure,
+blockquote {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    word-break: break-all;
+}
