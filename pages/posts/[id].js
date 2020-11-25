@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Article from '../../components/Posts/Article';
+import Header from '../../components/Posts/Header'
+import Article from '../../components/Posts/Article'
+import styles from '../../styles/Home.module.scss'
 import { useRouter } from 'next/router';
 import { useSelect } from '@wordpress/data';
 export default function PostPage() {
@@ -7,23 +9,25 @@ export default function PostPage() {
   const router = useRouter()
   const { id } = router.query;
 
-  const post = useSelect( ( select ) => {
-    const { getPost } = select( 'my-store/posts' );
-    if ( id ) {
-      return getPost( id );
+  const post = useSelect((select) => {
+    const { getPost } = select('my-store/posts');
+    if (id) {
+      return getPost(id);
     }
 
     return null;
 
-  }, [ id ] );
+  }, [id]);
 
   return (
-    <div>
+    <>
+      <Header />
       <Head>
-        <title>{post?.title.rendered} Post Example</title>
+        <title>{post?.title.rendered} GutenbergFreaks</title>
       </Head>
-
-      <Article id={id} />
-    </div>
+      <main className={styles.main}>
+        <Article id={id} />
+      </main>
+    </>
   )
 }

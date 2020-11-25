@@ -1,19 +1,17 @@
-import Head from 'next/head'
+import Header from '../components/Posts/Header'
+import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>WP Next Example</title>
-      </Head>
-
-      <h1>Examples</h1>
+    <>
+      <Header />
+      <main className={styles.main}>
       <ul>
-        <li><Link href="/todos"><a>Todos</a></Link></li>
-        <li><Link href="/posts"><a>Posts</a></Link></li>
+        {/* <li><Link href="/todos"><a>Todos</a></Link></li> */}
+        <li><Link href="/posts"><a>Blog</a></Link></li>
         <li><Link href="/meetups"><a>Meetups</a></Link></li>
       </ul>
-
-    </div>
+      </main>
+    </>
   )
 }

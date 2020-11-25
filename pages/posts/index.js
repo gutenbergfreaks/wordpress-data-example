@@ -1,12 +1,13 @@
-import Head from 'next/head'
-import Posts from '../../components/Posts/Posts';
+import Header from '../../components/Posts/Header'
+import Posts from '../../components/Posts/Posts'
+import styles from '../../styles/Home.module.scss'
 export default function PostIndexPage() {
   return (
-    <div>
-      <Head>
-        <title>Posts Example</title>
-      </Head>
+    <>
+      <Header />
+      <main className={styles.main}>
       <Posts />
-    </div>
+      </main>
+    </>
   )
 }

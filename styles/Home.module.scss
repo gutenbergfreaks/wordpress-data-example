@@ -1,0 +1,21 @@
+/* global */
+
+.header {
+     .nav {
+         ul {
+             display: flex;
+             gap: 1em;
+             li {
+                 list-style: none;
+             }
+         }
+     }
+}
+.main {
+    max-width: 40em;
+    margin: auto;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
