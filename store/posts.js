@@ -2,7 +2,7 @@ import { registerStore } from '@wordpress/data';
 import { apiFetch as apiFetchAction, controls } from '@wordpress/data-controls';
 import apiFetch from '@wordpress/api-fetch';
 
-apiFetch.use( apiFetch.createRootURLMiddleware( 'https://torounit.com/wp-json/' ) );
+apiFetch.use( apiFetch.createRootURLMiddleware( 'https://45bfe247dbc59386fb42932e0d9840c28f351eb7.hl-b.getshifter.co/wp-json/' ) );
 
 const DEFAULT_STATE = {
   posts: [],
