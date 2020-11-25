@@ -1,4 +1,5 @@
 import Header from '../../components/Posts/Header'
+import Footer from '../../components/Posts/Footer'
 import Posts from '../../components/Posts/Posts'
 import styles from '../../styles/Home.module.scss'
 export default function PostIndexPage() {
@@ -8,6 +9,7 @@ export default function PostIndexPage() {
       <main className={styles.main}>
         <Posts />
       </main>
+      <Footer />
     </>
   )
 }

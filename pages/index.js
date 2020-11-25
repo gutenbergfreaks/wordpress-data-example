@@ -1,4 +1,5 @@
 import Header from '../components/Posts/Header'
+import Footer from '../components/Posts/Footer'
 import Posts from '../components/Posts/Posts'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
@@ -15,6 +16,7 @@ export default function Home() {
         <li><Link href="/meetups"><a>Meetups</a></Link></li>
       </ul> */}
       </main>
+      <Footer />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../components/Posts/Header'
+import Footer from '../../components/Posts/Footer'
 import Article from '../../components/Posts/Article'
 import styles from '../../styles/Home.module.scss'
 import { useRouter } from 'next/router';
@@ -28,6 +29,7 @@ export default function PostPage() {
       <main className={styles.main}>
         <Article id={id} />
       </main>
+      <Footer />
     </>
   )
 }
