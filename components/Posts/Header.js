@@ -19,6 +19,12 @@ export default function Header() {
             <li><Link href={`/posts`}>
               <a>BLOG</a>
             </Link></li>
+            <li><Link href={`https://anchor.fm/gutenbergfreaks/`}>
+              <a>PODCAST</a>
+            </Link></li>
+            <li><Link href={`https://www.youtube.com/channel/UCwVwn-uaKOpLOlg_fB-ddUA`}>
+              <a>YOUTUBE</a>
+            </Link></li>
           </ul>
         </nav>
       </header>

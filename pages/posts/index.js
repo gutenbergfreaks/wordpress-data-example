@@ -6,7 +6,7 @@ export default function PostIndexPage() {
     <>
       <Header />
       <main className={styles.main}>
-      <Posts />
+        <Posts />
       </main>
     </>
   )

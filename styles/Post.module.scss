@@ -1,0 +1,14 @@
+.card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #eee;
+    color: black;
+}
+.title {
+    font-weight: 700;
+}
+.date {
+    font-size: 0.8em;
+}

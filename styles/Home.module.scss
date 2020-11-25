@@ -30,19 +30,15 @@
     article {
         padding: 1em;
     }
+    iframe {
+        width: 100%;
+    }
 }
 .archive {
     list-style: none;
     margin: 0;
     padding: 0;
     li {
-        a {
-            text-decoration: none;
-            display: flex;
-            padding: 1rem;
-            background-color: #eee;
-            color: black;
-        }
         &:not(:first-child) {
             margin-top: 1rem;
         }

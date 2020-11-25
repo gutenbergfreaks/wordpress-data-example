@@ -24,9 +24,9 @@ function Posts() {
 
   return (
     <ul className={styles.archive}>
-      { posts.map(({ id, title }) => (
+      { posts.map(({ id, title, date }) => (
         <li key={id}>
-          <PostLink title={title} id={id} />
+          <PostLink title={title} id={id} date={date} />
         </li>
       )
       )}
