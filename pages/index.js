@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header />
       <main className={styles.main}>
-        <iframe src="https://anchor.fm/gutenbergfreaks/embed" height="102px" width="400px" frameBorder="0" scrolling="no"></iframe>
+        <p>gutenbergfreaks.jpは「Gutenbergをネタにした止めどないお喋り」をする <a href="https://twitter.com/search?q=%23Gutenberg%E3%82%92%E8%AA%AD%E3%82%80%E4%BC%9A&src=typed_query">#Gutenbergを読む会</a> のサイトです。</p>
         <Posts />
       {/* <ul>
         <li><Link href="/todos"><a>Todos</a></Link></li>
