@@ -4,7 +4,7 @@ import '../styles/globals.css'
 import '../store'
 
 const tagManagerArgs = {
-  id: 'GTM-NF2RJV9'
+  gtmid: 'GTM-NF2RJV9'
 }
 
 class MyApp extends App {
